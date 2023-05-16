@@ -11,7 +11,7 @@ function App() {
   // setup beta 3 provider
   const provider = new Provider('https://beta-3.fuel.network/graphql');
   // setup wallet
-  const wallet = Wallet.fromPrivateKey(process.env.WALLET_PRIVATE_KEY as string, provider);
+  const wallet = Wallet.fromPrivateKey("0x..." as string, provider);
   // instantiate predicate
   const predicate = BackendAbi__factory.createInstance(provider);
   // validation to satisfy predicate
